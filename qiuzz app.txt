@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#00BCD4"
+android:gravity="center"
+tools:context=".MainActivity">
+ <com.airbnb.lottie.LottieAnimationView
+ android:layout_width="400dp"
+android:layout_height="400dp"
+app:lottie_autoPlay="true"
+app:lottie_loop="true"
+app:lottie_rawRes="@raw/lotti" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_1"
+ android:orientation="vertical">
+ <TextView
+ android:id="@+id/textView"
+android:layout_width="100dp"
+android:layout_height="50dp"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="166dp"
+android:layout_marginTop="22dp"
+android:text="MCQ'S"
+android:textColor="@color/black"
+android:textSize="30dp"
+android:textStyle="bold" />
+ <TextView
+ android:id="@+id/textView2"
+android:layout_width="273dp"
+android:layout_height="70dp"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="87dp"
+android:layout_marginTop="82dp"
+android:gravity="center"
+android:text="Question1/10"
+android:textColor="@color/black"
+android:textSize="25sp"
+android:textStyle="bold" />
+ <TextView
+ android:id="@+id/textView3"
+android:layout_width="339dp"
+android:layout_height="56dp"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="32dp"
+android:layout_marginTop="173dp"
+android:text="Questions"
+android:textColor="@color/black"
+android:textSize="25sp"
+android:textStyle="bold" />
+ <RadioButton
+ android:id="@+id/radioButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="50dp"
+android:layout_marginTop="330dp"
+android:text="True"
+android:textSize="40sp" />
+ <RadioButton
+ android:id="@+id/radioButton2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="50dp"
+android:layout_marginTop="400dp"
+android:text="False"
+android:textSize="40sp" />
+ <ImageButton
+ android:id="@+id/imageButton"
+android:layout_width="79dp"
+android:layout_height="53dp"
+android:layout_alignTop="@+id/textView3"
+android:layout_alignParentEnd="true"
+android:layout_marginTop="435dp"
+android:layout_marginEnd="292dp"
+android:foregroundGravity="center"
+app:srcCompat="@drawable/baseline_arrow_back_24" />
+ <ImageButton
+ android:id="@+id/imageButton2"
+android:layout_width="78dp"
+android:layout_height="56dp"
+android:layout_alignTop="@+id/textView2"
+android:layout_alignParentEnd="true"
+android:layout_marginTop="527dp"
+android:layout_marginEnd="108dp"
+android:foregroundGravity="center"
+app:srcCompat="@drawable/baseline_arrow_forward_24" />
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/img"
+tools:context=".quizactivity2">
+ <Button
+ android:id="@+id/button1"
+android:layout_width="190dp"
+android:layout_height="60dp"
+android:layout_gravity="center"
+android:layout_marginTop="250dp"
+android:text="MCQ,S"
+app:cornerRadius="50dp"
+/>
+ <Button
+android:id="@+id/button2"
+android:layout_width="190dp"
+android:layout_height="60dp"
+android:layout_gravity="center"
+android:layout_marginTop="20dp"
+android:text="TRUE/FALSE"
+ app:cornerRadius="50dp" />
+ <Button
+ android:id="@+id/button3"
+android:layout_width="190dp"
+android:layout_height="60dp"
+android:layout_gravity="center"
+android:layout_marginTop="20dp"
+android:text="RATE APP"
+app:cornerRadius="50dp" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#f6cd61"
+tools:context=".quizzactivity">
+ <TextView
+ android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/QuestionNumber"
+android:text="@string/question_number"
+android:textColor="#4a4e4d "
+android:textStyle="bold"
+android:textAlignment="center"
+android:layout_marginTop="20dp"
+android:textSize="30sp"
+>
+ </TextView>
+ <LinearLayout
+ android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+ <TextView
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="SeletedOption"
+android:id="@+id/selectopt"
+android:textAlignment="center"
+android:textColor="#4a4e4d">
+ </TextView>
+ <TextView
+ android:id="@+id/corrans"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="CorrectAnswer"
+android:textAlignment="center"
+android:textColor="#4a4e4d">
+ </TextView>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+android:layout_height="120dp"
+android:paddingLeft="50dp"
+android:paddingRight="50dp"
+android:layout_marginBottom="60dp"
+android:layout_marginTop="70dp"
+android:gravity="center">
+ <TextView
+ android:id="@+id/question"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/question_1"
+android:textColor="#ffffff"
+android:textSize="25sp">
+ </TextView>
+ </LinearLayout>
+<LinearLayout
+ android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/firsttwoopt"
+android:gravity="center"
+android:paddingLeft="50dp"
+android:paddingRight="50dp"
+android:orientation="vertical">
+ <TextView
+ android:layout_width="match_parent"
+android:layout_height="50dp"
+android:id="@+id/optA"
+android:text="@string/question1_A"
+android:textColor="#ffffff"
+android:textAlignment="center"
+android:background="@drawable/optiondesign"
+android:paddingTop="14sp">
+ </TextView>
+ <TextView
+ android:id="@+id/optB"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:paddingTop="14sp"
+android:text="@string/question1_B"
+android:layout_marginTop="10dp"
+android:background="@drawable/optiondesign"
+android:textAlignment="center"
+android:textColor="#ffffff">
+ </TextView>
+</LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/secondtwoopt"
+android:gravity="center"
+android:paddingLeft="50dp"
+android:paddingRight="50dp"
+android:layout_marginBottom="30dp"
+android:orientation="vertical">
+ <TextView
+ android:layout_width="match_parent"
+android:layout_height="50dp"
+android:id="@+id/optC"
+android:text="@string/question1_C"
+android:textColor="#ffffff"
+android:background="@drawable/optiondesign"
+android:layout_marginTop="10dp"
+android:textAlignment="center"
+android:paddingTop="14sp">
+ </TextView>
+ <TextView
+ android:layout_width="match_parent"
+android:layout_height="50dp"
+android:background="@drawable/optiondesign"
+android:id="@+id/optD"
+android:text="@string/question1_D"
+android:textColor="#ffffff"
+android:layout_marginTop="10dp"
+android:textAlignment="center"
+android:paddingTop="14sp">
+ </TextView>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="135dp"
+android:layout_height="59dp"
+android:layout_marginTop="20dp"
+android:orientation="vertical">
+ <TextView
+ android:id="@+id/score"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="left"
+android:paddingTop="10dp"
+android:text="@string/score"
+android:textColor="#ffffff"
+android:textSize="25sp"
+android:textStyle="bold">
+ </TextView>
+ </LinearLayout>
+ <ProgressBar
+ android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom"
+android:background="#000000"
+android:id="@+id/progbar"
+style="@android:style/Widget.ProgressBar.Horizontal"
+android:indeterminate="false">
+ </ProgressBar>
+</LinearLayout>
+JAVA CLASSES:
+package com.example.assignment2;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import com.airbnb.lottie.LottieAnimationView;
+public class MainActivity extends AppCompatActivity {
+ @Override
+protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+ new Handler().postDelayed(new Runnable() {
+ @Override
+public void run() {
+ Intent i=new Intent(MainActivity.this,quizactivity2.class); startActivity(i);
+finish();
+ }
+ },4000);
+ }
+}
+package com.example.assignment2;
+public class answerclass {
+ private int questionid,optionA,optionB,optionC,optionD,Anwerid;
+ public answerclass(int questid,int optA,int optB,int optC,int optD,int ansid)
+ {
+ questionid=questid;
+optionA=optA;
+optionB=optB;
+optionC=optC;
+optionD=optD;
+Anwerid=ansid;
+ }
+ public int getQuestionid() {
+ return questionid;
+ }
+public int getOptionA() {
+ return optionA;
+ }
+public int getOptionB() {return optionB;}
+ public int getOptionC() {
+ return optionC;
+ }
+public int getOptionD() {
+ return optionD;
+ }
+public int getAnwerid() {
+ return Anwerid;
+ }
+}
+package com.example.assignment2;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import java.util.Objects;
+public class mcqsactivity extends AppCompatActivity {
+ TextView qes, count;
+ String[] tf_ques, tf_ans;
+ String ans;
+ImageButton b1, b2;
+ int index, score;
+ RadioButton c1, c2;
+ @Override
+protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_mcqsactivity);
+qes = findViewById(R.id.textView3);
+ count = findViewById(R.id.textView2);
+ b1 = findViewById(R.id.imageButton);
+ b2 = findViewById(R.id.imageButton2);
+ c1 = findViewById(R.id.radioButton);
+ c2 = findViewById(R.id.radioButton2);
+ index = 0;
+tf_ques = getResources().getStringArray(R.array.MCQS);
+ tf_ans = getResources().getStringArray(R.array.correct);
+ qes.setText(tf_ques[index]);
+ b1.setEnabled(false);
+ c1.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View v) {
+ c2.setChecked(false);
+ }
+ });
+ c2.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View v) {
+ c1.setChecked(false);
+ }
+ });
+ b2.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View v) {
+ if (index < 9) {
+ b1.setEnabled(true);
+ if (c1.isChecked()) {
+ ans = "True";
+ }
+if (c2.isChecked()) {
+ ans = "False";
+ }
+if (Objects.equals(ans, tf_ans[index])) {
+ score++;
+ans = "";
+ }
+c1.setChecked(false);
+ c2.setChecked(false);
+ index++;
+qes.setText(tf_ques[index]);
+ count.setText(String.valueOf(index + 1));
+ } else {
+ qes.setText("Your Correct answers are: " + score + " From 10");
+ c1.setEnabled(false);
+ c2.setEnabled(false);
+ b2.setEnabled(false);
+ }
+ }
+ });
+ b1.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View v) {
+ if (index < 11) {
+ b2.setEnabled(true);
+ }
+if (index > 0) {
+ c1.setEnabled(true);
+ c2.setEnabled(true);
+ index--;
+qes.setText(tf_ques[index]);
+ c1.setChecked(false);
+ c2.setChecked(false);
+ count.setText(String.valueOf(index + 1));
+ } else b1.setEnabled(false);
+ }
+ });
+ }
+}
+package com.example.assignment2;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+public class quizactivity2 extends AppCompatActivity {
+ Button quizbt,mcqbt,rateappbt;
+ @Override
+protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_quizactivity2);
+quizbt=(Button)findViewById(R.id.button1);
+ quizbt.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ Intent i=new Intent(quizactivity2.this,quizzactivity.class); startActivity(i);
+ }
+ });
+ mcqbt=(Button)findViewById(R.id.button2);
+ mcqbt.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ Intent i1=new Intent(quizactivity2.this,mcqsactivity.class); startActivity(i1);
+ }
+ });
+ rateappbt=(Button)findViewById(R.id.button3);
+ rateappbt.setOnClickListener(new View.OnClickListener() {
+ @Override
+ public void onClick(View view) {
+gotoUrl("https://https://play.google.com/store/search?q=Air&c=apps");
+ }
+private void gotoUrl(String s) {
+ Uri uri=Uri.parse(s);
+ startActivity(new Intent(Intent.ACTION_VIEW,uri));
+ }
+ });
+ }
+}
+package com.example.assignment2;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+public class quizzactivity extends AppCompatActivity {
+ private TextView optA,optB,optC,optD;
+ private TextView questionnumber1,question,score;
+ private TextView checkout1,checkout2;
+ int Currentindex;
+ int mscore=0;
+ int qn=1;
+ ProgressBar pb1;
+ int
+CurrentQuestion,CurrentoptionA,CurrentoptionB,CurrentoptionC,CurrentoptionD;private answerclass[] questionbank=new answerclass[]
+ {
+ new
+answerclass(R.string.question_1,R.string.question1_A,R.string.question1_B,R.string.question1_C,R.string.question1_D,R.string.answer_1),
+ new
+answerclass(R.string.question_2,R.string.question2_A,R.string.question2_B,R.string.question2_C,R.string.question2_D,R.string.answer_2),
+ new
+answerclass(R.string.question_3,R.string.question3_A,R.string.question3_B,R.string.question3_C,R.string.question3_D,R.string.answer_3),
+ new
+answerclass(R.string.question_4,R.string.question4_A,R.string.question4_B,R.string.question4_C,R.string.question4_D,R.string.answer_4),
+ new
+answerclass(R.string.question_5,R.string.question5_A,R.string.question5_B,R.string.question5_C,R.string.question5_D,R.string.answer_5),
+ new
+answerclass(R.string.question_6,R.string.question6_A,R.string.question6_B,R.string.question6_C,R.string.question6_D,R.string.answer_6),
+ new
+answerclass(R.string.question_7,R.string.question7_A,R.string.question7_B,R.string.question7_C,R.string.question7_D,R.string.answer_7),
+ new
+answerclass(R.string.question_8,R.string.question8_A,R.string.question8_B,R.string.question8_C,R.string.question8_D,R.string.answer_8),
+ };
+ final int progrees_bar= (int) Math.ceil(100/questionbank.length);
+ @Override
+protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_quizzactivity);
+optA=findViewById(R.id.optA);
+ optB=findViewById(R.id.optB);
+ optC=findViewById(R.id.optC);
+ optD=findViewById(R.id.optD);
+ question=findViewById(R.id.question);
+ score=findViewById(R.id.score);
+ questionnumber1=findViewById(R.id.QuestionNumber);
+ checkout1=findViewById(R.id.selectopt);
+ checkout2=findViewById(R.id.corrans);
+ pb1=findViewById(R.id.progbar);
+ CurrentQuestion=questionbank[Currentindex].getQuestionid();
+ question.setText(CurrentQuestion);
+ CurrentoptionA=questionbank[Currentindex].getOptionA();
+ optA.setText(CurrentoptionA);
+ CurrentoptionB=questionbank[Currentindex].getOptionB();
+ optB.setText(CurrentoptionB);
+ CurrentoptionC=questionbank[Currentindex].getOptionC();
+ optC.setText(CurrentoptionC);
+ CurrentoptionD=questionbank[Currentindex].getOptionD();
+ optD.setText(CurrentoptionD);
+ optA.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ checkAnswer(CurrentoptionA);
+ updateQuestion();
+ }
+ });
+ optB.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ checkAnswer(CurrentoptionB);
+ updateQuestion();
+ }
+ });
+ optC.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ checkAnswer(CurrentoptionC);
+ updateQuestion();
+ }
+ });
+ optD.setOnClickListener(new View.OnClickListener() {
+ @Override
+public void onClick(View view) {
+ checkAnswer(CurrentoptionD);
+ updateQuestion();
+ }
+ });
+ }
+private void checkAnswer(int userselection) {
+ int correctanswer=questionbank[Currentindex].getAnwerid();
+ checkout1.setText(userselection);
+checkout2.setText(correctanswer);
+String m=checkout1.getText().toString().trim();
+String n=checkout2.getText().toString().trim();
+ if(m.equals(n))
+ {
+ Toast.makeText(getApplicationContext(),"Right",
+Toast.LENGTH_SHORT ).show();
+ mscore=mscore+1;
+ }
+else
+{
+ Toast.makeText(getApplicationContext(),"Wrong",
+Toast.LENGTH_SHORT ).show();
+ }
+ }
+ private void updateQuestion() {
+ Currentindex=(Currentindex+1)%questionbank.length;
+ if(Currentindex==1)
+ {
+ AlertDialog.Builder alert=new AlertDialog.Builder(this);
+ alert.setTitle("Game Over");
+alert.setCancelable(false);
+alert.setMessage("Your Score" + mscore +"points");
+ alert.setPositiveButton("close application", new
+DialogInterface.OnClickListener() {
+ @Override
+public void onClick(DialogInterface dialogInterface, int i) { finish();
+ }
+ });
+ alert.setNegativeButton(" No", new
+DialogInterface.OnClickListener() {
+ @Override
+public void onClick(DialogInterface dialogInterface, int i) { mscore=0;
+qn=1;
+pb1.setProgress(0);
+ score.setText("score" + mscore +"/"
++questionbank.length);
+ questionnumber1.setText(qn +"/" +questionbank.length +"Question");
+ }
+ });
+ alert.show();
+ }
+CurrentQuestion=questionbank[Currentindex].getQuestionid();
+ question.setText(CurrentQuestion);
+ CurrentoptionA=questionbank[Currentindex].getOptionA();
+ optA.setText(CurrentoptionA);
+ CurrentoptionB=questionbank[Currentindex].getOptionB();
+ optB.setText(CurrentoptionB);
+ CurrentoptionC=questionbank[Currentindex].getOptionC();
+ optC.setText(CurrentoptionC);
+ CurrentoptionD=questionbank[Currentindex].getOptionD();
+ optD.setText(CurrentoptionD);
+ qn=qn+1;
+ if(qn<=questionbank.length)
+ {
+ questionnumber1.setText(qn +"/" +questionbank.length
++"Question");
+ }
+score.setText("score" + mscore +"/" +questionbank.length);
+ pb1.incrementProgressBy(progrees_bar);
+ }
+}
